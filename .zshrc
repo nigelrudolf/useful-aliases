@@ -11,3 +11,9 @@ track_worktree() {
   branch_name=$1
   git worktree add --track -b $branch_name ~/Work/worktrees/$branch_name origin/$branch_name
 }
+
+remove_worktree() {
+  branch_name=$1
+  git worktree remove $branch_name
+  git branch -d $branch_name
+}
