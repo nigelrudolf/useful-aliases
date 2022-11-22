@@ -14,6 +14,6 @@ track_worktree() {
 
 remove_worktree() {
   branch_name=$1
-  git worktree remove $branch_name
-  git branch -d $branch_name
+  git worktree remove --force $branch_name
+  git branch -D $branch_name
 }
