@@ -1,12 +1,16 @@
+# These commands are to be used in project root
 
 alias ipad-mini='yarn react-native run-ios --simulator="iPad mini (6th generation)"'
 alias ipad-air='yarn react-native run-ios --simulator="iPad Air (5th generation)"'
 # Use this to update your repo with the latest changes from the remote: branches/commits etc
+# I run this command frequently to make sure I can see the latest branches other developers have pushed to origin
+# This is required to be able to track those branches locally and create worktrees
+# usage: remup
 alias remup='git remote update origin --prune'
 alias push='git push origin HEAD'
 
 # Use this to create a new worktree that creates a new branch
-# Usage: add_worktree <branch_name>
+# Usage: in project root, add_worktree <branch_name>
 add_worktree() {
   branch_name=$1
   git worktree add ~/Work/worktrees/$branch_name 
