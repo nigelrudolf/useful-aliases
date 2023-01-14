@@ -10,7 +10,7 @@ alias remup='git remote update origin --prune'
 alias push='git push origin HEAD'
 
 # Use this to create a new worktree that creates a new branch
-# Usage: in project root, add_worktree <branch_name>
+# Usage: add_worktree <branch_name>
 add_worktree() {
   branch_name=$1
   git worktree add ~/Work/worktrees/$branch_name 
@@ -24,6 +24,7 @@ track_worktree() {
 }
 
 # Use this to remove a worktree and deletes the branch
+# Usage: remove_worktree <branch_name>
 remove_worktree() {
   branch_name=$1
   git worktree remove --force $branch_name
