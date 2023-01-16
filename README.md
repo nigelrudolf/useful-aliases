@@ -2,6 +2,17 @@
 
 Helps with launching simulators and working with worktrees. Use these commands in the root of your project.
 
+## Usage
+```
+ipad-mini                   // Launches the iPad Mini simulator
+ipad-air                    // Launches the iPad Air simulator
+remup                       // Updates the remote origin
+push                        // Pushes to the remote origin
+add_worktree <branch>       // Adds a worktree for the given branch, uses the current branch as the base
+track_worktree <branch>     // Tracks the worktree for the given branch
+remove_worktree <branch>    // Removes the worktree for the given branch
+```
+
 ## Setup
 To use the aliases that help with worktrees, you will need to setup the following directory structure:
 
