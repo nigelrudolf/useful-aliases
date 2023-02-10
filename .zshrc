@@ -31,3 +31,8 @@ remove_worktree() {
   git worktree remove --force $branch_name
   git branch -D $branch_name
 }
+
+commit() {
+  message=$1
+  git commit --no-verify -m $message
+}
