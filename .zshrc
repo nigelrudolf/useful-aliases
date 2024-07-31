@@ -32,3 +32,10 @@ commit() {
   message=$1
   git commit --no-verify -m $message
 }
+
+bundle_android() {
+ cd android
+ ./gradlew bundleRelease
+ cd ..
+ mv android/app/build/outputs/bundle/release/app-release.aab ~/Desktop
+}
