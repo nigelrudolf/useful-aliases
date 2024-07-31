@@ -1,8 +1,4 @@
 # These commands are to be used in project root
-
-alias ipad-mini='yarn react-native run-ios --simulator="iPad mini (6th generation)"'
-alias ipad-air='yarn react-native run-ios --simulator="iPad Air (5th generation)"'
-alias iphone-fourteen-pro='yarn react-native run-ios --simulator="iPhone 14 Pro"'
 # Use this to update your repo with the latest changes from the remote: branches/commits etc
 # I run this command frequently to make sure I can see the latest branches other developers have pushed to origin
 # This is required to be able to track those branches locally and create worktrees
