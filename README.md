@@ -4,8 +4,6 @@ Helps with launching simulators and working with worktrees. Use these commands i
 
 ## Usage
 ```
-ipad-mini                   // Launches the iPad Mini simulator
-ipad-air                    // Launches the iPad Air simulator
 remup                       // Updates the remote origin
 push                        // Pushes to the remote origin
 add_worktree <branch>       // Adds a worktree for the given branch, uses the current branch as the base
