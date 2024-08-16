@@ -15,9 +15,7 @@ remove_worktree <branch>    // Removes the worktree for the given branch
 To use the aliases that help with worktrees, you will need to setup the following directory structure:
 
 ```
-mkdir ~/Work
-
-mkdir ~/Work/worktrees
+mkdir -p ~/Work/worktrees
 ```
 
 ## Installation
