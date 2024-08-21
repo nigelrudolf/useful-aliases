@@ -10,7 +10,7 @@ alias push='git push origin HEAD'
 # Usage: add_worktree <branch_name>
 add_worktree() {
   branch_name=$1
-  git worktree add ~/Work/worktrees/$branch_name 
+  git worktree add ~/Work/worktrees/$branch_name -b $branch_name 
 }
 
 # Use this to create a new worktree that tracks a remote branch
